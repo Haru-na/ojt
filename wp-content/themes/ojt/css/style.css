@@ -1,4 +1,60 @@
+.top {
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    position: absolute;
+    left: 60px;
+    top: -49px;
+    z-index: 1;
+}
+.hamburger-button {
+    display: none;
+}
+/* .hamburger-nav {
+    display: none; 
+}  */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    
+
+}
+.nav > li {
+    padding-right: 30px;
+}
+.mainbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+}
+
+.main-text {
+    position: absolute;
+    right: 60px;
+    bottom: -49px;
+}
 .footer {
     background-color: black;
     color: white;
+}
+
+@media screen and (max-width:767px){
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-right {
+        display: none;
+    }
+    .hamburger-button {
+        display: flex;
+      }
+
 }

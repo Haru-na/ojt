@@ -5,42 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/hamburger-menu.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>AmericanVillage</title>
 </head>
 
 <body>
     <header class="top">
         <div class="header-left">
-            <ul class="nav">
-                <li><a href="">Menu01</a></li>
-                <li><a href="">Menu02</a></li>
-                <li><a href="">Menu03</a></li>
-                <li><a href="">Menu04</a></li>
-            </ul>
-        </div>
-
-        <div class="header-right">
             <a href="">
                 <img src="./img/logo.png" alt="" class="logo">
             </a>
         </div>
+        <!-- ハンバーガーメニュー -->
+        <button class="hamburger-button"></button>
 
-        <main>
+        <!-- ナビゲーション -->
+        <div class="header-right">
+             <!-- <nav class="hamburger-nav">  -->
+                <ul class="nav">
+                    <li><a href="">Menu01</a></li>
+                    <li><a href="">Menu02</a></li>
+                    <li><a href="">Menu03</a></li>
+                    <li><a href="">Menu04</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="mainbox">
             <img src="./img/visual_1_pc.png" alt="" srcset="" class="main-img">
             <img src="./img/visual_text_pc.png" alt="" class="main-text">
-            <p>進化し続ける「街」アメリカンビレッジマガジン</p>
-        </main>
+        </div>
+       
+        <p>進化し続ける「街」アメリカンビレッジマガジン</p>
+    </main>
 
-        <div class="Articles"></div>
-        <h2>Latest Articles</h2>
-        <section class="blogs"></section>
-
-
-    </header>
-
+    <div class="Articles"></div>
+    <h2>Latest Articles</h2>
+    <section class="blogs"></section>
     <footer class="footer">
         <p class="footer__copyright">Copyright <small>&copy; Shinohara AllRightReserved.</small></p>
     </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/hamburger-menu.js"></script>
 </body>
 
 </html>
