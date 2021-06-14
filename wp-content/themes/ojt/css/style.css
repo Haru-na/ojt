@@ -39,7 +39,22 @@
     right: 60px;
     bottom: -49px;
 }
+
+h2 {
+   text-align: center; 
+}
+
+.blogs {
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
 .footer {
+    display: flex;
+    justify-content: center;
     background-color: black;
     color: white;
 }
