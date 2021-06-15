@@ -11,6 +11,9 @@
   Text Domain:    //テキストドメイン（翻訳させたい箇所を指示する際に使います。テーマディレクトリ名を入れます。）
 */
 
+body {
+    max-width: 1152px;
+}
 .top {
     height: 18vh;
     display: flex;
@@ -72,17 +75,44 @@ h2 {
 .gallery > li {
     width: 350px;
     height: 420px;
+    border: solid 1px;
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    flex-direction: column;
+    
 }
-
-.readmore {
-    width: 100px;
-    border: solid 1px;
-    /* 配置考え中 */
+.subtitle {
+    margin-bottom: 80px;
 }
+/* ReadMoreの略したdivBOXです */
+.rm {
+    display: flex;
+    justify-content: flex-end;
+} 
+/* ReadMoreの下の線が動く */
+.underline {
+    display: inline-block;
+    padding-bottom: 4px;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .underline::after {
+    background-color:#c0c0c0;
+    bottom: -5px;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    transition: .5s all;
+    width: 10px;
+  }
+  
+  .underline:hover::after {
+    width: 100%;
+  } 
 
 .footer {
     display: flex;
