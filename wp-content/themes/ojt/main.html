@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,15 +34,15 @@
     </header>
 
     <main>
-        <!-- PC用 -->
         <div class="mainbox">
-            <img src="./img/visual_1_pc.png" alt="" class="main-img">
-            <img src="./img/visual_text_pc.png" alt="" class="main-text">
-        </div>
-        <!-- SP用 -->
-        <div class="sp-mainbox">
-            <img src="./img/visual_1_sp.png" alt=""　class="spmain-img">
-            <img src="./img/visual_text_sp.png" alt=""　class="spmain-text">
+            <picture>
+                <source media="(min-width: 768px)" srcset="./img/visual_1_pc.png">
+                <img src="./img/visual_1_sp.png" alt="">          
+            </picture>
+            <picture class="main-text">
+                <source media="(min-width: 768px)" srcset="./img/visual_text_pc.png">          
+                <img src="./img/visual_text_sp.png" alt="">         
+            </picture>
         </div>
 
 
@@ -115,7 +114,7 @@
                         <a class="underline" href="/">Read More</a>
                     </div>
                 </li>
-                
+
             </ul>
         </div>
     
