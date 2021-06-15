@@ -56,13 +56,10 @@ body {
 
 .main-text {
     position: absolute;
-    right: 60px;
+    right: 3px;
     bottom: -49px;
 }
 
-.sp-mainbox {
-    display: none;
-}
 h2 {
     margin-top: 100px;
    text-align: center; 
@@ -145,7 +142,7 @@ h2 {
         display: flex;
       }
     /* main */
-    .mainbox {
+    /* .mainbox {
         display: none;
     }
     .sp-mainbox {
@@ -159,5 +156,5 @@ h2 {
         position: absolute;
         left: 25px;
         top: 20px;
-    }
+    } */
 }
