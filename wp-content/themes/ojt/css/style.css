@@ -11,6 +11,9 @@
   Text Domain:    //テキストドメイン（翻訳させたい箇所を指示する際に使います。テーマディレクトリ名を入れます。）
 */
 
+body {
+    max-width: 1152px;
+}
 .top {
     height: 18vh;
     display: flex;
