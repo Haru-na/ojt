@@ -10,14 +10,17 @@
   License URI:    //ライセンスの URL
   Text Domain:    //テキストドメイン（翻訳させたい箇所を指示する際に使います。テーマディレクトリ名を入れます。）
 */
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body {
+.body {
     max-width: 1152px;
+    margin-right: auto;
+    margin-left: auto;
 }
+
 .top {
     height: 18vh;
     display: flex;
@@ -135,7 +138,7 @@ h2 {
     width: 100%;
   } 
 
-.footer {
+footer {
     width: 100vw;
     height: 130px;
     bottom: 0;
