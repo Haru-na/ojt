@@ -53,6 +53,9 @@
     bottom: -49px;
 }
 
+.sp-mainbox {
+    display: none;
+}
 h2 {
    text-align: center; 
 }
@@ -73,17 +76,34 @@ h2 {
 }
 
 @media screen and (max-width:767px){
+    
     .top {
         height: 40vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    
     .header-right {
         display: none;
     }
     .hamburger-button {
         display: flex;
       }
-
+    /* main */
+    .mainbox {
+        display: none;
+    }
+    .sp-mainbox {
+        display: initial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .spmain-text {
+        position: absolute;
+        left: 25px;
+        top: 20px;
+    }
 }
