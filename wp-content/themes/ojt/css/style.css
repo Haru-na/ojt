@@ -36,9 +36,6 @@
 .hamburger-button {
     display: none;
 }
-/* .hamburger-nav {
-    display: none; 
-}  */
 .nav {
     display: flex;
     justify-content: space-around;
@@ -153,29 +150,42 @@ footer {
         height: 40vh;
         display: flex;
         justify-content: center;
-        align-items: center;
     }
-    
+    .logo {
+        padding: 31px;
+        height: 219px;
+    }
     .header-right {
         display: none;
     }
     .hamburger-button {
         display: flex;
       }
-    /* main */
-    /* .mainbox {
-        display: none;
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
     }
-    .sp-mainbox {
+    /* main */
+    .mainbox {
+        width: 100vw;
         display: initial;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
     }
-    .spmain-text {
+    .main-img > img {
+        width: 100vw;
+    }
+    .main-text {
         position: absolute;
-        left: 25px;
-        top: 20px;
-    } */
+        top: 20px; 
+        left: 33px;
+    } 
+    .main-text > img {
+        width: 70vw;
+    }
 }
