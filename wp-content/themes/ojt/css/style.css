@@ -57,12 +57,28 @@ h2 {
    text-align: center; 
 }
 
-.blogs {
-    
+.gallery {
+    /* width: 90vw; */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-content: space-around;
+}
+
+.gallery > li {
+    width: 350px;
+    height: 420px;
+    border: solid 1px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.readmore {
+    width: 100px;
+    border: solid 1px;
+    /* 配置考え中 */
 }
 
 .footer {
@@ -71,6 +87,7 @@ h2 {
     background-color: black;
     color: white;
 }
+
 
 @media screen and (max-width:767px){
     .top {
