@@ -10,14 +10,17 @@
   License URI:    //ライセンスの URL
   Text Domain:    //テキストドメイン（翻訳させたい箇所を指示する際に使います。テーマディレクトリ名を入れます。）
 */
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body {
+.body {
     max-width: 1152px;
+    margin-right: auto;
+    margin-left: auto;
 }
+
 .top {
     height: 18vh;
     display: flex;
@@ -60,12 +63,14 @@ body {
     bottom: -49px;
 }
 
+
 h2 {
-    margin-top: 100px;
+    margin-top: 200px;
+    margin-bottom: 100px;
    text-align: center; 
 }
 
-.gallery {
+.post-blogs {
     /* width: 90vw; */
     display: flex;
     justify-content: space-around;
@@ -73,17 +78,31 @@ h2 {
     align-content: space-around;
 }
 
-.gallery > li {
-    width: 350px;
+.post-blogs > li {
     height: 420px;
-    /* border: solid 1px; */
     list-style: none;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 50px;
-    
+    margin-bottom: 100px;
 }
+
+/* ブログのhover */
+.post-blog {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0);
+  /* background-color: #4CAF50; */
+  /* color: #fff; */
+  display: inline-block;
+  padding: 0.6em 2em;
+  margin: 0 0 1em;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.post-blog:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+  transform: translateY(-0.1875em);
+}
+
 .subtitle {
     margin-bottom: 80px;
 }
@@ -116,11 +135,13 @@ h2 {
     width: 100%;
   } 
 
-.footer {
+footer {
     width: 100vw;
-    height: auto;
+    height: 130px;
+    bottom: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: black;
     color: white;
 }
