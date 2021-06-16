@@ -191,13 +191,13 @@ footer {
     background-color: black;
     display: block;
     content: '';
-    transition: all 1s;
+    transition: all 0.2s;
   }
   .icon::before {
-    top: -25px;
+    top: -10px; /*三本線の間隔*/
   }
   .icon::after {
-    top: 25px;
+    top: 10px;
   }
   .hamburger {
       display: none;
@@ -226,13 +226,15 @@ footer {
 
   /* ハンバーガの中のメニューバー*/
   .menu-content {
+    display: none;
     width: 100%;
     height: 100%;
     position: fixed;
     top: 260px;
     z-index: 2;
-    background-color: rgb(189, 189, 245);
-    transition: all 0.2s;
+    background-color: white;
+    opacity: 0.95;
+    transition: all 0.3s;
   }
   
   .menu{
@@ -244,10 +246,10 @@ footer {
       margin-bottom: 50px;
   }
   
-  /* .hamburger:checked ~ .menu-content {
+  .hamburger:checked ~ .menu-content {
     display: block;
     right: 0;
-  } */
+  }
     /* ここまでハンバーガーメニュー */
 
     /* main */
