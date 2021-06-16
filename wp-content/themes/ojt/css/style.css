@@ -22,7 +22,7 @@
 }
 
 .top {
-    height: 18vh;
+    height: 127px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,22 +46,36 @@
 .nav > li {
     padding-right: 30px;
 }
-.mainbox {
-    width: 100%;
+main {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.mainbox {
+    height: 577px;
+    width: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
     z-index: 0;
 }
+.img-wrap {
+    width: 100%;
+    position: relative;
+}
+.img-wrap picture {
+    width: 100%;
+    position: absolute;
+}
+.main-img {
+    display: flex;
+    justify-content: center;
 
-
-
-
-
+}
 .main-text {
     position: absolute;
     right: 3px;
-    bottom: -49px;
+    bottom: 74px;
 }
 
 
