@@ -27,13 +27,15 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .logo {
     position: absolute;
     left: 60px;
     top: 15px;
     z-index: 1;
 }
-.menu-btn {
+
+.hamburger{
     display: none;
 }
 
@@ -41,12 +43,12 @@
     display: flex;
     justify-content: space-around;
     list-style: none;
-    
-
 }
-.nav > li {
+
+.menu > li {
     padding-right: 30px;
 }
+
 .mainbox {
     width: 100%;
     display: flex;
@@ -55,16 +57,11 @@
     z-index: 0;
 }
 
-
-
-
-
 .main-text {
     position: absolute;
     right: 3px;
     bottom: -49px;
 }
-
 
 h2 {
     margin-top: 200px;
@@ -73,7 +70,6 @@ h2 {
 }
 
 .post-blogs {
-    /* width: 90vw; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -156,25 +152,100 @@ footer {
         display: flex;
         justify-content: center;
     }
+
     .logo {
         margin: 31px auto;
         position: initial;
         /* padding: 31px; */
         height: 219px;
     }
-    .header-right {
+
+    /* .header-right {
         display: none;
-    }
-    .hamburger-button {
-        display: flex;
-      }
-    .nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-    }
+    } */
+
+/* バーガーのチェックボックスとiconを関連づけしている*/
+.btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    cursor: pointer;
+    /* background-color: blue; */
+  }
+  /* バーガー三本線*/
+  .icon, .icon::before, .icon::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 2px;
+    width: 15px;
+    background-color: black;
+    display: block;
+    content: '';
+    transition: all 1s;
+  }
+  .icon::before {
+    top: -25px;
+  }
+  .icon::after {
+    top: 25px;
+  }
+  .hamburger {
+      display: none;
+  }
+
+  .hamburger:checked ~ .btn .icon {
+    background: transparent;
+  }
+  .hamburger:checked ~ .btn .icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .hamburger:checked ~ .btn .icon:after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .hamburger:checked ~ .nav {
+    display: none;
+  } 
+  .menu {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center ;
+    align-items: center;
+  }
+
+  /* ハンバーガの中のメニューバー*/
+  .menu-content {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 260px;
+    z-index: 1;
+    background-color: rgb(189, 189, 245);
+    transition: all 0.2s;
+  }
+  
+  .menu{
+    flex-direction: column;
+    list-style: none;
+  }
+  
+  /* .hamburger:checked ~ .menu-content {
+    display: block;
+    right: 0;
+  } */
+    /* ここまでハンバーガーメニュー */
+
     /* main */
     .mainbox {
         width: 100vw;
