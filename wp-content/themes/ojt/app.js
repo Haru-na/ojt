@@ -1,3 +1,4 @@
+
 $(function(){
     console.log($('.img-wrap picture:nth-child(n+2)'));
     $('.img-wrap picture:nth-child(n+2)').hide();
