@@ -57,7 +57,7 @@
 } */
 
 .mainbox {
-    height: 577px;
+    height: 550px;
     width: 100%;
     position: relative;
     display: flex;
@@ -65,6 +65,7 @@
     z-index: 0;
 }
 .img-wrap {
+    height: 515px;
     width: 100%;
     position: relative;
 }
@@ -80,7 +81,7 @@
 .main-text {
     position: absolute;
     right: 3px;
-    bottom: 74px;
+    bottom: 101px;
 }
 
 .comment-box > p > br {
