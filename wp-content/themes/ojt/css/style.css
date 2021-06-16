@@ -264,12 +264,11 @@ footer {
     .comment-box > p {
         width: 416px;
         height: 165px;
-        text-justify: center;
-        
+        text-align: center;
     }
 
-    .comment-box > p > br{
-        display: inline;
+    .comment-box > p > br {
+        display: block;
     }
 
     /* main */
