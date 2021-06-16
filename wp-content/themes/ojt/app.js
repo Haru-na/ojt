@@ -9,7 +9,7 @@ $(function () {
     // ハンバーガー用
     $('.hamburger').on('click', function(){
         $(".burger-btn").toggleClass("close");　//closeというclassを追加/削除
-        $(".menu-content").fadeToggle(500);  //0.5秒かけてフェードイン/アウト
+        $(".menu-content").slideToggle(500);  //0.5秒かけてフェードイン/アウト
     });
 
 });
