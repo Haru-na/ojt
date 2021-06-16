@@ -63,6 +63,10 @@
     bottom: -49px;
 }
 
+.comment-box > p > br {
+    display: none;
+}
+
 h2 {
     margin-top: 200px;
     margin-bottom: 100px;
@@ -251,6 +255,22 @@ footer {
     right: 0;
   }
     /* ここまでハンバーガーメニュー */
+  .comment-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .comment-box > p {
+        width: 416px;
+        height: 165px;
+        text-justify: center;
+        
+    }
+
+    .comment-box > p > br{
+        display: inline;
+    }
 
     /* main */
     .mainbox {
