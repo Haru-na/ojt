@@ -73,9 +73,9 @@
             </div>
         <?php endwhile;
     else :
-        ?><p>表示する記事がありません</p><?php
+        ?><p>もっと見る</p><?php
     endif;
-?>
+?></div>
                 <!-- <li class="post-blog">
                     <div class="gallery1" data-title="グループ1キャプション">
                         <img src="< echo get_template_directory_uri();?>/img/post_img_2.png" alt="">
