@@ -30,6 +30,8 @@ add_theme_support( 'menus' );
 add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' ); //*ここ
 
+ // スライダー
+// echo do_shortcode('[smartslider3 slider="4"]');
 
 
 ?>

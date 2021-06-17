@@ -5,8 +5,11 @@
                 <source media="(min-width: 768px)" srcset="./img/visual_1_pc.png">
                 <img src="./img/visual_1_sp.png" alt="">          
             </picture> -->
-
-            <div class="img-wrap">
+             <!-- スライダー -->
+            <?php
+             echo do_shortcode('[smartslider3 slider="4"]');
+            ?>
+            <!-- <div class="img-wrap">
                 <picture class="main-img">
                     <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri();?>/img/visual_1_pc.png">
                     <img src="<?php echo get_template_directory_uri();?>/img/visual_1_sp.png" alt=""> 
@@ -35,7 +38,7 @@
                     <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri();?>/img/visual_7_pc.png">
                     <img src="<?php echo get_template_directory_uri();?>/img/visual_7_sp.png" alt=""> 
                 </picture>
-            </div>
+            </div> -->
 
             <picture class="main-text">
                 <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri();?>/img/visual_text_pc.png">          
