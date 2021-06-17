@@ -27,13 +27,13 @@
                 <span class="icon"></span>
                 </label>
                 <nav class="menu-content">
-                    <!-- php wp_nav_menu(); ?> -->
-                    <ul class="menu">
+                    <?php wp_nav_menu(); ?>
+                    <!-- <ul class="menu">
                         <li class="menu-item"><a href="">Menu01</a></li>
                         <li class="menu-item"><a href="">Menu02</a></li>
                         <li class="menu-item"><a href="">Menu03</a></li>
                         <li class="menu-item"><a href="">Menu04</a></li>
-                    </ul>   
+                    </ul>    -->
                 </nav>
         </div>
     </header>

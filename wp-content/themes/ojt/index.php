@@ -53,20 +53,32 @@
     <h2>Latest Articles</h2>
     
         <div class="post-blogBox">
-            <ul class="post-blogs">
-                <li class="post-blog">
-                    <div class="gallery1" data-title="グループ1キャプション">
-                        <img src="<?php echo get_template_directory_uri();?>/img/post_img_1.png" alt="">
-                        <p>2018/5/20</p>
-                        <p class="subtitle">おしゃれカフェがありますよ</p>
-                    </div>
-                    <div class="rm">
+        <?php
+    if( have_posts() ) :
+        while( have_posts() ) :
+            the_post(); ?> <!--この下からendwhile;までがループ処理中-->
+            <div class="post-blogBox">
+                <ul class="post-blogs__meta">
+                    <li class="post-blog__meta__item">
+                        <div class="gallery1" data-title="グループ1キャプション">
+                        <?php the_post_thumbnail(); ?>
+                        <date class="post__meta__date"><?php echo get_the_date(); ?></date>
+                        <p class="post__ttl"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+                        </div>
+                        <div class="rm">
                         <a class="underline" href="/">Read More</a>
-                    </div>
-                </li>
-                <li class="post-blog">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        <?php endwhile;
+    else :
+        ?><p>表示する記事がありません</p><?php
+    endif;
+?>
+                <!-- <li class="post-blog">
                     <div class="gallery1" data-title="グループ1キャプション">
-                        <img src="<?php echo get_template_directory_uri();?>/img/post_img_2.png" alt="">
+                        <img src="< echo get_template_directory_uri();?>/img/post_img_2.png" alt="">
                         <p>2018/5/19</p>
                         <p class="subtitle">あのネオンはいつ交換するのか！？観覧<br>車の謎に迫る！</p>
                     </div>
@@ -76,7 +88,7 @@
                 </li>
                 <li class="post-blog">
                     <div class="gallery1" data-title="グループ1キャプション">
-                        <img src="<?php echo get_template_directory_uri();?>/img/post_img_3.png" alt="">
+                        <img src="< echo get_template_directory_uri();?>/img/post_img_3.png" alt="">
                         <p>2018/5/18</p>
                         <p class="subtitle">ラソナの社内はこんなのよ</p>
                     </div>
@@ -86,8 +98,8 @@
                 </li>
                 <li class="post-blog">
                     <div class="gallery1" data-title="グループ1キャプション">
-                        <img src="<?php echo get_template_directory_uri();?>/img/post_img_4.png" alt="">
-                        <p>2018/5/27</p>
+                        <img src="< echo get_template_directory_uri();?>/img/post_img_4.png" alt="">
+                        <p>2018/5/17</p>
                         <p class="subtitle">お隣のアラハはハワイ？</p>
                     </div>
                     <div class="rm">
@@ -96,7 +108,7 @@
                 </li>
                 <li class="post-blog">
                     <div class="gallery1" data-title="グループ1キャプション">
-                        <img src="<?php echo get_template_directory_uri();?>/img/post_img_5.png" alt="">
+                        <img src="< echo get_template_directory_uri();?>/img/post_img_5.png" alt="">
                         <p>2018/5/16</p>
                         <p class="subtitle">なぜテント？ラソナの人に聞いてみた</p>
                     </div>
@@ -106,7 +118,7 @@
                 </li>
                 <li class="post-blog">
                     <div class="gallery1" data-title="グループ1キャプション">
-                        <img src="<?php echo get_template_directory_uri();?>/img/post_img_6.png" alt="">
+                        <img src="< echo get_template_directory_uri();?>/img/post_img_6.png" alt="">
                         <p>2018/5/15</p>
                         <p class="subtitle">ベイエリアおしゃれすぎる問題</p>
                     </div>
@@ -116,6 +128,6 @@
                 </li>
 
             </ul>
-        </div>
+        </div> -->
 </div>
 <?php get_footer(); ?>
