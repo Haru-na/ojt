@@ -95,15 +95,21 @@ h2 {
    text-align: center; 
 }
 
-.post-blogs {
+.post-blogBox{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.post-blogs__meta {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-content: space-around;
 }
 
-.post-blogs > li {
-    height: 420px;
+.post-blogs__meta > li {
+    height: 400px;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -111,18 +117,24 @@ h2 {
     margin-bottom: 100px;
 }
 
+.gallery1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: space-between;
+}
+
 /* ブログのhover */
-.post-blog {
+.post-blog__meta__item {
+  width: 320px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0);
-  /* background-color: #4CAF50; */
-  /* color: #fff; */
   display: inline-block;
   padding: 0.6em 2em;
   margin: 0 0 1em;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-.post-blog:hover {
+.post-blog__meta__item:hover {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
   transform: translateY(-0.1875em);
 }
@@ -132,6 +144,7 @@ h2 {
 }
 /* ReadMoreの略したdivBOXです */
 .rm {
+    margin-top: 50px;
     display: flex;
     justify-content: flex-end;
 } 
