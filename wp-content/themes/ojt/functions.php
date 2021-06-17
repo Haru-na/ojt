@@ -25,4 +25,9 @@ add_action( 'wp_enqueue_scripts', 'ojt_script' );
 // 外観にメニューを追加
 add_theme_support( 'menus' );
 
+// アイキャッチ画像がが扱えるように
+add_theme_support( 'menus' );
+add_theme_support( 'title-tag' );
+add_theme_support( 'post-thumbnails' ); //*ここ
+
 ?>
