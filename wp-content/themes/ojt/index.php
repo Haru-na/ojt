@@ -76,11 +76,11 @@
                 <source media="(min-width: 768px)" srcset="./img/visual_text_pc.png">          
                 <img src="./img/visual_text_sp.png" alt="">         
             </picture>
-        </div>
-            
             <div class="comment-box">
                 <p>進化し続ける「街」<br>アメリカンビレッジマガジン</p>
             </div>
+        </div>
+            
 
     </main>
 
