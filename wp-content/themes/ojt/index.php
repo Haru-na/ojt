@@ -10,32 +10,32 @@
 
             <!-- <div class="img-wrap">
                 <picture class="main-img">
-                    <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri();?>/img/visual_1_pc.png">
-                    <img src="<?php echo get_template_directory_uri();?>/img/visual_1_sp.png" alt=""> 
+                    <source media="(min-width: 768px)" srcset="<hp echo get_template_directory_uri();?>/img/visual_1_pc.png">
+                    <img src="<hp echo get_template_directory_uri();?>/img/visual_1_sp.png" alt=""> 
                 </picture>
                 <picture class="main-img">
-                    <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri();?>/img/visual_2_pc.png">
-                    <img src="<?php echo get_template_directory_uri();?>/img/visual_2_sp.png" alt=""> 
+                    <source media="(min-width: 768px)" srcset="<hp echo get_template_directory_uri();?>/img/visual_2_pc.png">
+                    <img src="<hp echo get_template_directory_uri();?>/img/visual_2_sp.png" alt=""> 
                 </picture>
                 <picture class="main-img">
-                    <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri();?>/img/visual_3_pc.png">
-                    <img src="<?php echo get_template_directory_uri();?>/img/visual_3_sp.png" alt=""> 
+                    <source media="(min-width: 768px)" srcset="<hp echo get_template_directory_uri();?>/img/visual_3_pc.png">
+                    <img src="<hp echo get_template_directory_uri();?>/img/visual_3_sp.png" alt=""> 
                 </picture>
                 <picture class="main-img">
-                    <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri();?>/img/visual_4_pc.png">
-                    <img src="<?php echo get_template_directory_uri();?>/img/visual_4_sp.png" alt=""> 
+                    <source media="(min-width: 768px)" srcset="<p echo get_template_directory_uri();?>/img/visual_4_pc.png">
+                    <img src="<hp echo get_template_directory_uri();?>/img/visual_4_sp.png" alt=""> 
                 </picture>
                 <picture class="main-img">
-                    <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri();?>/img/visual_5_pc.png">
-                    <img src="<?php echo get_template_directory_uri();?>/img/visual_5_sp.png" alt=""> 
+                    <source media="(min-width: 768px)" srcset="<hp echo get_template_directory_uri();?>/img/visual_5_pc.png">
+                    <img src="<hp echo get_template_directory_uri();?>/img/visual_5_sp.png" alt=""> 
                 </picture>
                 <picture class="main-img">
-                    <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri();?>/img/visual_6_pc.png">
-                    <img src="<?php echo get_template_directory_uri();?>/img/visual_6_sp.png" alt=""> 
+                    <source media="(min-width: 768px)" srcset="<hp echo get_template_directory_uri();?>/img/visual_6_pc.png">
+                    <img src="<hp echo get_template_directory_uri();?>/img/visual_6_sp.png" alt=""> 
                 </picture>
                 <picture class="main-img">
-                    <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri();?>/img/visual_7_pc.png">
-                    <img src="<?php echo get_template_directory_uri();?>/img/visual_7_sp.png" alt=""> 
+                    <source media="(min-width: 768px)" srcset="<hp echo get_template_directory_uri();?>/img/visual_7_pc.png">
+                    <img src="<hp echo get_template_directory_uri();?>/img/visual_7_sp.png" alt=""> 
                 </picture>
             </div> -->
 
