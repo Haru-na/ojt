@@ -78,29 +78,7 @@
                 </ul>
             </div>
 <!-- ここからもっと見る対応したい -->
-            <?php
-    global $paged;
-    if( empty( $paged ) ) $paged = 3;
 
-    global $wp_query;
-    $pages = $wp_query -> max_num_pages;
-    if( !$pages ) {
-        $pages = 3;
-    }
-    // 1ページしかない or 最後のページでは出力しない条件分岐をさせる
-    if( $pages != 3 && $paged < $pages ) {
- ?>
-    <button class="view-more-button" type="button">もっと見る</button>
-    <div class="page-load-status" style="display:none;">
-        <div class="infinite-scroll-request">ロード中</div>
-        <p class="infinite-scroll-last">これ以上は記事がありません</p>
-        <p class="infinite-scroll-error">読み込むページがありません</p>
-    </div>
-
-<?php } // 閉じるのを忘れずに！
- ?>
-
-            <!--php echo count_user_posttype(get_the_author_meta('id'),"post"); ?> 投稿数を呼び出す-->
 
         <?php endwhile;
     else:
