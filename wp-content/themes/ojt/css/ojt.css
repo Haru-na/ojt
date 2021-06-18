@@ -19,7 +19,7 @@
 
 .logo {
     position: absolute;
-    left: 65px;
+    left: 67.31px;
     top: 50px;
     z-index: 1;
 }
@@ -76,7 +76,9 @@
     display: flex;
     justify-content: center;
 }
-
+.slider_sp {
+  display: none;
+}
 .main-text {
     position: absolute;
     /* right: 3px;
@@ -84,15 +86,24 @@
     right: -11px;
     bottom: 0px;
 }
-
+.comment-box {
+  margin-top: 15px 0;
+  margin-left: 32px;
+}
+.comment-box > p {
+  font-size: 32px;
+}
 .comment-box > p > br {
     display: none;
 }
 
 h2 {
-    margin-top: 100px;
-    margin-bottom: 100px;
-   text-align: center; 
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
+    margin-top: 60px;
+    padding-bottom: 50px;
+    font-size: 40px;
+    text-align: center; 
 }
 
 .post-blogBox{
@@ -174,8 +185,9 @@ h2 {
 
 footer {
     width: 100vw;
-    height: 130px;
+    height: 128px;
     bottom: 0;
+    margin-top: 128px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,7 +199,8 @@ footer {
 @media screen and (max-width:767px){
     
     .top {
-        height: 40vh;
+        /* height: 40vh; */
+        height: 280px;
         display: flex;
         justify-content: center;
     }
@@ -292,6 +305,7 @@ footer {
     /* ここまでハンバーガーメニュー */
   .comment-box {
       width: 100%;
+      margin-top: 15px 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -299,7 +313,9 @@ footer {
     .comment-box > p {
         width: 416px;
         height: 165px;
+        margin-top: 28px;
         text-align: center;
+        vertical-align: middle; 
     }
 
     .comment-box > p > br {
@@ -308,6 +324,7 @@ footer {
 
     /* main */
     .mainbox {
+        height: 262.5px;
         width: 100vw;
         display: initial;
         display: flex;
@@ -318,12 +335,37 @@ footer {
     .main-img > img {
         width: 100vw;
     }
+    .slider_pc {
+      display: none;
+    }
+    .slider_sp {
+      display: block;
+      height: 100%;
+
+    }
     .main-text {
+        height: 262.5px;
         position: absolute;
-        top: 20px; 
-        left: 33px;
+        top: 32px; 
+        left: 32px;
     } 
     .main-text > img {
         width: 70vw;
+    }
+
+    
+
+    /* Latest Artices */
+    h2 {
+      font-size: 40px;
+      padding-top: 60px;
+      padding-bottom: 50px;
+      margin: 0;
+    }
+
+    /* footer */
+    footer {
+      height: 128px;
+      padding-top: 59px;
     }
 }

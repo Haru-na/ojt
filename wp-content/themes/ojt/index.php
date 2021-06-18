@@ -6,7 +6,12 @@
                 <img src="./img/visual_1_sp.png" alt="">          
             </picture> -->
              <!-- スライダー -->
-             <?php echo do_shortcode('[smartslider3 slider="4"]');?>
+             <div class="slider_pc">
+                <?php echo do_shortcode('[smartslider3 slider="4"]');?>
+             </div>
+             <div class="slider_sp">
+                <?php echo do_shortcode('[smartslider3 slider="5"]');?>
+             </div>
 
             <!-- <div class="img-wrap">
                 <picture class="main-img">
