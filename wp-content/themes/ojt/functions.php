@@ -30,7 +30,7 @@ add_theme_support( 'menus' );
 add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' ); //*ここ
 
- // スライダー
+ // スライダー ここに書いてエラー出たからindex.php８行目に書いてる
 // echo do_shortcode('[smartslider3 slider="4"]');
 
 

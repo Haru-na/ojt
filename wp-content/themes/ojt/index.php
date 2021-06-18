@@ -6,9 +6,8 @@
                 <img src="./img/visual_1_sp.png" alt="">          
             </picture> -->
              <!-- スライダー -->
-            <?php
-             echo do_shortcode('[smartslider3 slider="4"]');
-            ?>
+             <?php echo do_shortcode('[smartslider3 slider="4"]');?>
+
             <!-- <div class="img-wrap">
                 <picture class="main-img">
                     <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri();?>/img/visual_1_pc.png">
