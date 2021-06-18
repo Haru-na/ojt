@@ -371,6 +371,6 @@ footer {
     /* footer */
     footer {
       height: 128px;
-      padding-top: 59px;
+      margin-top: 59px;
     }
 }
