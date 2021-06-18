@@ -185,7 +185,11 @@ h2 {
 
 /* もっと見るボタン用 */
 .more_btn {
-
+  width:100px;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: coral;
 }
 
 footer {
@@ -238,10 +242,10 @@ footer {
   /* バーガー三本線*/
   .icon, .icon::before, .icon::after {
     position: absolute;
-    top: 0;
+    top: 90px;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 200px;
     margin: auto;
     height: 2px;
     width: 15px;
