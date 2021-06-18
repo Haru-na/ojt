@@ -52,13 +52,12 @@
 
     </main>
 
-    <div class="Articles"></div>
     <h2>Latest Articles</h2>
     
         <div class="post-blogBox">
         <?php
-    if( have_posts() ) :
-        while( have_posts() ) :
+             if( have_posts() ) :
+            while( have_posts() ) :
             the_post(); ?> <!--この下からendwhile;までがループ処理中-->
             <div class="post-blogBox">
                 <ul class="post-blogs__meta">
@@ -74,63 +73,13 @@
                     </li>
                 </ul>
             </div>
-        <?php endwhile;
-    else :
-        ?><p>もっと見る</p><?php
-    endif;
-?></div>
-                <!-- <li class="post-blog">
-                    <div class="gallery1" data-title="グループ1キャプション">
-                        <img src="< echo get_template_directory_uri();?>/img/post_img_2.png" alt="">
-                        <p>2018/5/19</p>
-                        <p class="subtitle">あのネオンはいつ交換するのか！？観覧<br>車の謎に迫る！</p>
-                    </div>
-                    <div class="rm">
-                        <a class="underline" href="/">Read More</a>
-                    </div>
-                </li>
-                <li class="post-blog">
-                    <div class="gallery1" data-title="グループ1キャプション">
-                        <img src="< echo get_template_directory_uri();?>/img/post_img_3.png" alt="">
-                        <p>2018/5/18</p>
-                        <p class="subtitle">ラソナの社内はこんなのよ</p>
-                    </div>
-                    <div class="rm">
-                        <a class="underline" href="/">Read More</a>
-                    </div>
-                </li>
-                <li class="post-blog">
-                    <div class="gallery1" data-title="グループ1キャプション">
-                        <img src="< echo get_template_directory_uri();?>/img/post_img_4.png" alt="">
-                        <p>2018/5/17</p>
-                        <p class="subtitle">お隣のアラハはハワイ？</p>
-                    </div>
-                    <div class="rm">
-                        <a class="underline" href="/">Read More</a>
-                    </div>
-                </li>
-                <li class="post-blog">
-                    <div class="gallery1" data-title="グループ1キャプション">
-                        <img src="< echo get_template_directory_uri();?>/img/post_img_5.png" alt="">
-                        <p>2018/5/16</p>
-                        <p class="subtitle">なぜテント？ラソナの人に聞いてみた</p>
-                    </div>
-                    <div class="rm">
-                        <a class="underline" href="/">Read More</a>
-                    </div>
-                </li>
-                <li class="post-blog">
-                    <div class="gallery1" data-title="グループ1キャプション">
-                        <img src="< echo get_template_directory_uri();?>/img/post_img_6.png" alt="">
-                        <p>2018/5/15</p>
-                        <p class="subtitle">ベイエリアおしゃれすぎる問題</p>
-                    </div>
-                    <div class="rm">
-                        <a class="underline" href="/">Read More</a>
-                    </div>
-                </li>
 
-            </ul>
-        </div> -->
-</div>
+            <?php echo count_user_posttype(get_the_author_meta('id'),"post"); ?> <!--投稿数を呼び出す-->
+
+        <?php endwhile;
+    else:
+        ?><p>表示する記事がありません</p><?php
+    endif;
+    ?></div>
+</div><!--class=bodyの閉じタグ-->
 <?php get_footer(); ?>
