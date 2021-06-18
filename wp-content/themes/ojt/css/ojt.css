@@ -172,6 +172,11 @@ h2 {
     width: 100%;
   } 
 
+/* もっと見るボタン用 */
+.more_btn {
+
+}
+
 footer {
     width: 100vw;
     height: 130px;

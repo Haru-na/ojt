@@ -6,5 +6,10 @@ $(function(){
     $(".img-wrap picture:nth-child(2)").fadeIn(3000);
     $(".img-wrap picture:first-child").appendTo(".img-wrap");
     }, 3000);
+
+    // もっと見る
+    $(document) .ready(function() {
+        $('.more_btn a').html("もっと見る");
+    });
 	
 });
