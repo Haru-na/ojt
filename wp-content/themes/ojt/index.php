@@ -50,11 +50,11 @@
             </picture>
         </div>
         
-        <div class="comment-box">
-            <p>進化し続ける「街」<br>アメリカンビレッジマガジン</p>
-        </div>
-
+        
     </main>
+    <div class="comment-box">
+        <p>進化し続ける「街」<br>アメリカンビレッジマガジン</p>
+    </div>
 
     <h2>Latest Articles</h2>
     
