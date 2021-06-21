@@ -124,7 +124,6 @@ h2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 100px;
 }
 
 .gallery1 {
@@ -183,19 +182,37 @@ h2 {
   } 
 
 /* もっと見るボタン用 */
-.more_btn {
-  width:100px;
-  display: flex;
-  justify-content: center;
-  border-radius: 30px;
-  background-color: coral;
+/* .post-blog__meta__item{
+  opacity: 1;
+}
+.post-blog__meta__item.is-hidden {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+} */
+.list-btn {
+  margin-top: 20px;
+}
+.list-btn.is-btn-hidden{
+display:none;
+}
+.list-btn button {
+  background-color: #333;
+  color:#fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  height: 32px;
+  line-height: 32px;
+  width: 120px;
 }
 
 footer {
     width: 100vw;
     height: 128px;
     bottom: 0;
-    margin-top: 128px;
+    margin-top: 59px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -367,10 +384,12 @@ footer {
       padding-bottom: 50px;
       margin: 0;
     }
-
+    .post-blog__meta__item {
+      margin-bottom: 15px;
+    }
     /* footer */
-    footer {
+    .footer {
       height: 128px;
-      margin-top: 59px;
+      /* margin-top: 59px; */
     }
 }

@@ -28,12 +28,13 @@
     <h2>Latest Articles</h2>
     
         <div class="post-blogBox">
-        <?php query_posts('posts_per_page=6')?>
+
         <?php
-             if( have_posts() ):
+           if( have_posts() ):
             while( have_posts()):
             the_post(); 
-            ?> <!--この下からendwhile;までがループ処理中-->
+            ?>
+            <!--この下からendwhile;までがループ処理中-->
             <div class="post-blogBox">
                 <ul class="post-blogs__meta">
                     <li class="post-blog__meta__item">
@@ -48,15 +49,20 @@
                     </li>
                 </ul>
             </div>
-<!-- ここからもっと見る対応したい -->
 
-        <?php 
+            <?php 
         endwhile;
     else:
         ?>
        <p>表示する記事がありません</p><?php
      endif;?>
+     <!-- ここからもっと見る対応したい -->
+     <div class="list-btn">
+         <button>もっと見る</button>
+     </div>
+    
+     <!-- ここまで -->
+
     </div>
-    <!-- <div class="more_btn"><p></p></div> -->
 </div><!--class=bodyの閉じタグ-->
 <?php get_footer(); ?>
